@@ -1,0 +1,118 @@
+/*General Layout*/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("../image.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/*Header*/
+header {
+    background: none; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+/*Navigation Menu*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    float: left;
+}
+nav {
+    text-align: center;
+    margin-top: 10px
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    text-decoration: underline;
+    background: rgba(27, 26, 26, 0.2);
+}
+/*Clear floats in nav*/
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Sections*/
+section {
+    padding: 40px;
+    text-align: center;
+}
+.section {
+    margin: 20px;
+}
+.section img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.section p {
+    overflow: hidden; 
+}
+/*gallery*/
+.gallery {
+    text-align: center;
+    margin: 20px;
+}
+.gallery img {
+    float: center;
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover{
+    transform: scale(1.05); 
+    border-color: white;
+}
+/*clear floats in gallery*/
+.gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Responsive Fix*/
+@media screen and (max-width: 768px) {
+    nav li {
+        float: none;
+        text-align: center;
+    }
+    .section img, .gallery img{
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+}
+ul{
+    list-style-type: none;  
+    padding: 0;  
+}              
+ul li{
+    margin-bottom: 15px;    
+    text-align: center;     
+    font-size: 18px;        
+}
+
+
+
